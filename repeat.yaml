@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  creationTimestamp: null
   labels:
-    app: test
-  name: test
+    app: repeat
+  name: repeat
 spec:
   replicas: 10
   selector:
     matchLabels:
-      app: test
+      app: repeat
+  strategy: {}
   template:
     metadata:
+      creationTimestamp: null
       labels:
-        app: test
+        app: repeat
     spec:
       containers:
-      - image: httpd:alpine3.21
+      - image: httpd
         name: httpd
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxUnavailable: 1
-      maxSurge: 1
+        resources: {}
+status: {}
