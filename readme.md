@@ -19,5 +19,5 @@ This repo is my personal learning space for mastering Kubernetes using **Minikub
 ---
 
 ## 🗂 Repo Layout
-WIP
+- WIP
 
